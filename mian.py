@@ -25,7 +25,7 @@ import sys
 for k in range(5):
     model = tm.SWIN_T_base_Model(num_continuous=68 - 12).to(device)
     model.read_and_freeze_tabmodel_parameters(
-        "pretrain_para/pre_train_tab_contrast.pth"
+        "pre_train_tab_contrast.pth"
     )
     output_file = "contrast_with_train_result" + str(k) + ".txt"
     # 打开输出文件，并将标准输出重定向到文件
