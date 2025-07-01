@@ -66,7 +66,7 @@ These features collectively characterize the physical, environmental, and spatia
   Includes functions for testing model performance, supporting evaluation metrics calculation and result visualization.  
 
 - **tool_train.py**  
-  Contains training functions with implemented enhancement strategies: variable learning rates, boundary contrastive learning, and QRAS (Quantile Regression Active Sampling).  
+  Contains training functions with implemented enhancement strategies: variable learning rates, boundary contrastive learning, and QRAS ( Quad Rotation Augmentation Strategy).  
 
 
 ### 3. Main Execution Script  
