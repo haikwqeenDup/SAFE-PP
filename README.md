@@ -1,7 +1,7 @@
 # SAFE-PP
 A Spatial-Aware FramEwork for Land Suitability  Classification
 
-# Cultivated Land Dataset README  
+# Cultivated Land Dataset
 
 ## Dataset Overview  
 The cultivated land dataset comprises categorical features and numerical features, which collectively reflect the land characteristics of specific cultivated areas and serve as a basis for cultivated land decision-making.  
@@ -37,7 +37,59 @@ The cultivated land dataset comprises categorical features and numerical feature
 
 
 ## Dataset Structure Summary  
-- **Categorical Features**: 12 attributes, capturing qualitative characteristics like soil properties, slope classifications, and functional zoning.  
-- **Numerical Features**: 56 attributes, quantifying spatial metrics, area proportions, topographical parameters, and land use indicators.  
+- **Categorical Features**: 12 attributes, capturing qualitative characteristics like soil properties, slope classifications, and functional zoning.
 
 These features collectively characterize the physical, environmental, and spatial attributes of cultivated land, enabling comprehensive analysis for agricultural planning, land management, ecological protection, and policy-making.
+
+
+# SAFE++ Model Code
+
+
+## Model Overview  
+**SAFE++** is a model designed for cultivated land decision-making, with generalizable applications to broader land decision tasks. It integrates spatial data processing, feature engineering, and machine learning to support informed land management decisions.  
+
+
+## Code Structure and Functionality  
+### 1. Preprocessing Scripts  
+- **step1_preprocess_csv_to_pkl.py**  
+  First-stage preprocessing: Parses geohash codes of land data into definite latitude-longitude coordinates, then stores the processed data as pickle (`.pkl`) files.  
+
+- **step2_preprocess_pkl_to_tensor.py**  
+  Second-stage preprocessing: Converts data into tensors suitable for direct model input. Operations include spatial information aggregation, regional data partitioning, categorical attribute encoding, and numerical attribute standardization.  
+
+
+### 2. Model and Training Tools  
+- **tool_model.py**  
+  Contains PyTorch model class definitions required for model execution, defining network architectures and forward propagation logic.  
+
+- **tool_test_and_draw.py**  
+  Includes functions for testing model performance, supporting evaluation metrics calculation and result visualization.  
+
+- **tool_train.py**  
+  Contains training functions with implemented enhancement strategies: variable learning rates, boundary contrastive learning, and QRAS (Quantile Regression Active Sampling).  
+
+
+### 3. Main Execution Script  
+- **main.py**  
+  The primary entry point of the program, integrating scripts for model training and testing.  
+
+
+### 4. Data Examples  
+Three provided `.pt` files contain preprocessed data samples (after step1 and step2) that can be directly input into the model, demonstrating the data format and structure expected by the model.  
+
+
+## Model Applications  
+- Core application: Cultivated land decision-making (e.g., land use planning, soil protection strategies).  
+- Generalizable to: Various land-related decision tasks, including urban land development, ecological conservation, and agricultural resource management.  
+
+
+## Technical Features  
+- Spatial data processing pipeline for geohash and coordinate conversion.  
+- End-to-end workflow from raw data to model inference.  
+- Enhanced training strategies for improved generalization and accuracy.  
+- Modular code structure for easy extension and customization.  
+
+
+## Runtime Environment  
+- **PyTorch**: 1.8.1  
+- **Python**: 3.8  
