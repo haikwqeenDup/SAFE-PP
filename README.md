@@ -19,19 +19,19 @@ The cultivated land dataset comprises categorical features and numerical feature
 - Whether the slope is above 15°  (2 types of values)
 - Main functional area  (4 types of values)
 - Drinking water protection area grade  (3 types of values)
-
+- (Additional categorical attributes as applicable)
 
 ## Numerical Features (56 Attributes)  
-- Cultivated land fragmentation index  
-- Proportion of high-standard farmland area  
-- Proportion of cultivated land area  
-- Area of permanent basic farmland  
-- Area of cultivated land irrigation  
-- Area of cultivated land inflow  
-- Distance between cultivated land and rivers  
-- Area of forest land  
-- Area of paddy field  
-- Area of cultivated land reserve resources  
+- Cultivated land fragmentation index  (numerical value between 0 and 1)
+- Proportion of high-standard farmland area  (numerical value between 0 and 1)
+- Proportion of cultivated land area  (numerical value between 0 and 1)
+- Area of permanent basic farmland  (numerical value with the unit of m²)
+- Area of cultivated land irrigation  (numerical value with the unit of m²)
+- Area of cultivated land inflow  (numerical value with the unit of m²)
+- Distance between cultivated land and rivers  (numerical value with the unit of m)
+- Area of forest land  (numerical value with the unit of m²)
+- Area of paddy field  (numerical value with the unit of m²)
+- Area of cultivated land reserve resources  (numerical value with the unit of m²)
 - (56 total numerical attributes, including additional metrics such as spatial distances, area proportions, and topographical indices)  
 
 
