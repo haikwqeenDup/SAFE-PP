@@ -8,18 +8,17 @@ The cultivated land dataset comprises categorical features and numerical feature
 
 
 ## Categorical Features (12 Attributes)  
-- Soil pollution grade of classification unit  
-- Soil layer thickness of classification unit  
-- Soil texture of classification unit  
-- Soil pollution grade of expanded classification unit  
-- Soil layer thickness of expanded classification unit  
-- Soil texture of expanded classification unit  
-- Whether the slope is above 2°  
-- Whether the slope is above 6°  
-- Whether the slope is above 15°  
-- Main functional area  
-- Drinking water protection area grade  
-- (Additional categorical attributes as applicable)  
+- Soil pollution grade of classification unit  (3 types of values)
+- Soil layer thickness of classification unit  (3 types of values)
+- Soil texture of classification unit  (3 types of values)
+- Soil pollution grade of expanded classification unit  (3 types of values)
+- Soil layer thickness of expanded classification unit  (3 types of values)
+- Soil texture of expanded classification unit  (3 types of values)
+- Whether the slope is above 2°  (2 types of values)
+- Whether the slope is above 6°  (2 types of values)
+- Whether the slope is above 15°  (2 types of values)
+- Main functional area  (4 types of values)
+- Drinking water protection area grade  (3 types of values)
 
 
 ## Numerical Features (56 Attributes)  
